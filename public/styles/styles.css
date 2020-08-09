@@ -71,9 +71,6 @@ body{
     margin-top: 0;
     letter-spacing: -2px;
 }
-#bigText-sm:hover{
-    cursor: pointer;
-}
 .gallery{
     position: fixed;
     display: flex;

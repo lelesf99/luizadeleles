@@ -16,9 +16,6 @@ document.querySelectorAll('.singleNav').forEach(function(element){
 		stopDefAction(event);
 	});
 });
-document.querySelector("#bigText-sm").addEventListener("click", ()=>{
-	window.location.hash = "Home"
-});
 document.querySelector("#bigText").addEventListener("click", ()=>{
 	blackOut = document.querySelector("#blackOut");
 	if(blackOut.getAttribute("disabled") == null){
