@@ -1,0 +1,180 @@
+*::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #EEEEEE;
+    height: 100vh;
+}
+/*@keyframes crazy{
+    0%{}
+    20%{}
+    40%{}
+    80%{}
+    100%{}
+}*/
+
+.container{
+    transition: opacity 0.5s, z-index 1.5s;
+}
+.homePage{
+    position: fixed;
+    background-image: radial-gradient(#FFFFFF, #EEEEEE, #CCCCCC);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0%;
+    z-index: -10;
+}
+#bigText{
+    position: relative;
+    margin: auto;
+    width: 185px;
+    text-align: left;
+}
+#bigText h1{
+    position: relative;
+    top: -20px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    font-size: 80px;
+    margin-top: 0; 
+    letter-spacing: -6px;
+}
+#bigText h3{
+    font-weight: 200;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px;
+    margin-bottom: 0;
+    letter-spacing: -4px;
+}
+#bigText-sm{
+    text-align: center;
+}
+#bigText-sm h1{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0; 
+    letter-spacing: -4px;
+}
+#bigText-sm h3{
+    font-weight: 200;
+    font-size: 40px;
+    text-shadow: 1px 1px 3px;
+    margin-top: 0;
+    letter-spacing: -2px;
+}
+.gallery{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0%;
+    z-index: -10;
+}
+.navbar{
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 240px;
+    overflow: hidden;
+    transition: height 0.8s, z-index 0.8s;
+}
+.navbarlist{
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    list-style: none;
+}
+.navCluster{
+    display: flex;
+}
+
+.navBarLink{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0px;
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.5s, width 0.2s;
+}
+.navBarLink:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    background-color: #CCCCCC;
+    box-shadow: 0px 0px 2px black;
+}
+.galleryContent{
+    position: absolute;
+    left: 240px;
+    overflow: scroll;
+    width: calc(100% - 240px);
+    height: 100%;
+    opacity: 0%;
+    z-index: -10;
+}
+.imgsWrapp{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+.img{
+    overflow: hidden;
+    background-color: #999999;
+    height: 300px;
+    width: calc(25% - 10px);
+    min-width: 300px;
+    margin: 5px;
+    transition: width 0.2s, height 0.2s, margin 0.2s;
+}
+#togglemenu{
+    position: fixed;
+    display: none;
+    font-size: 25px;
+    height: 35px;
+    width: 75px;
+    padding-top: 5px;
+    margin: 0;
+    border-radius: 3px;
+    transition: background-color 0.2s, box-shadow 0.2s, font-weight 0.2s;
+}
+#togglemenu:hover{
+    box-shadow: 0px 0px 2px black;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #CCCCCC;
+}
+.collapsed{
+    height: 100%;
+}
+.on{
+    opacity: 100%;
+    z-index: 10;
+}
+.hid{
+    display: none;
+    margin: 0;
+}
+.backNavToggle{
+    width: 0%;
+}
+.disabled{
+    color: #FFFFFF;
+    background-color: #888888;
+    box-shadow: 0px 0px 2px black;
+}
+.disabled:hover{
+    color: #FFFFFF;
+    background-color: #888888;
+    box-shadow: 0px 0px 2px black;
+    cursor: context-menu;
+}
