@@ -1,0 +1,43 @@
+body{
+    background-color: #222222;
+}
+p{
+	color: #FFFFFF;
+}
+#bigtext h1, h3{
+	color: #FFFFFF;
+}
+#bigtext-sm h1, h3{
+	color: #FFFFFF;
+}
+.homePage{
+    background-image: radial-gradient(#333333, #333333, #222222);
+}
+.navBarLink{
+    color: #FFFFFF;
+}
+.navBarLink:hover{
+    color: #FFFFFF;
+    background-color: #555555;
+}
+#togglemenu{
+	color: #FFFFFF;
+}
+#togglemenu:hover{
+	color: #FFFFFF;
+    background-color: #555555;
+}
+.disabled{
+    color: #FFFFFF;
+    background-color: #555555;
+}
+.disabled:hover{
+    color: #FFFFFF;
+    background-color: #555555;
+}
+.backNav{
+	background-color: #FF5252;
+}
+.backNav:hover{
+	background-color: #FF5252;
+}

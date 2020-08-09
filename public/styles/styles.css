@@ -35,6 +35,9 @@ body{
     width: 185px;
     text-align: left;
 }
+#bigText:hover{
+    cursor: context-menu;
+}
 #bigText h1{
     position: relative;
     top: -20px;
@@ -67,6 +70,9 @@ body{
     text-shadow: 1px 1px 3px;
     margin-top: 0;
     letter-spacing: -2px;
+}
+#bigText-sm:hover{
+    cursor: pointer;
 }
 .gallery{
     position: fixed;
@@ -109,7 +115,7 @@ body{
     text-decoration: none;
     color: #000000;
     background-color: #CCCCCC;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 3px black;
 }
 .galleryContent{
     position: absolute;
@@ -168,13 +174,19 @@ body{
     width: 0%;
 }
 .disabled{
-    color: #FFFFFF;
-    background-color: #888888;
+    color: #000000;
+    background-color: #CCCCCC;
     box-shadow: 0px 0px 2px black;
 }
 .disabled:hover{
-    color: #FFFFFF;
-    background-color: #888888;
+    color: #000000;
+    background-color: #CCCCCC;
     box-shadow: 0px 0px 2px black;
     cursor: context-menu;
+}
+.backNav{
+    background-color: #FF5252;
+}
+.backNav:hover{
+    background-color: #FF5252;
 }

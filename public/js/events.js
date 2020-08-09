@@ -16,6 +16,17 @@ document.querySelectorAll('.singleNav').forEach(function(element){
 		stopDefAction(event);
 	});
 });
+document.querySelector("#bigText-sm").addEventListener("click", ()=>{
+	window.location.hash = "Home"
+});
+document.querySelector("#bigText").addEventListener("click", ()=>{
+	blackOut = document.querySelector("#blackOut");
+	if(blackOut.getAttribute("disabled") == null){
+		blackOut.setAttribute("disabled", "disabled");
+	}else{
+		blackOut.removeAttribute("disabled");
+	}
+});
 for (let i = 0; i < navClusters.length; i++) {
 	let backNav = navClusters[i].firstElementChild;
 	let nav = navClusters[i].lastElementChild;
