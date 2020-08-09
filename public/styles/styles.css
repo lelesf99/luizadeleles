@@ -8,6 +8,11 @@ body{
     background-color: #EEEEEE;
     height: 100vh;
 }
+div {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+}
 /*@keyframes crazy{
     0%{}
     20%{}
@@ -21,19 +26,22 @@ body{
 }
 .homePage{
     position: fixed;
-    background-image: radial-gradient(#FFFFFF, #EEEEEE, #CCCCCC);
+    overflow: scroll;
+    background-color:  #EEEEEE;
     width: 100vw;
     height: 100vh;
     text-align: center;
-    overflow: hidden;
+    overflow: scroll;
     opacity: 0%;
     z-index: -10;
+    transition: background-color 0.5s;
 }
 #bigText{
     position: relative;
     margin: auto;
     width: 185px;
     text-align: left;
+
 }
 #bigText:hover{
     cursor: context-menu;
@@ -46,6 +54,7 @@ body{
     font-size: 80px;
     margin-top: 0; 
     letter-spacing: -6px;
+    transition: color 0.5s;
 }
 #bigText h3{
     font-weight: 200;
@@ -53,6 +62,7 @@ body{
     text-shadow: 1px 1px 3px;
     margin-bottom: 0;
     letter-spacing: -4px;
+    transition: color 0.5s;
 }
 #bigText-sm{
     text-align: center;
@@ -77,7 +87,6 @@ body{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    overflow: hidden;
     opacity: 0%;
     z-index: -10;
 }
