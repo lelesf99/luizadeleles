@@ -158,17 +158,16 @@ div {
 }
 .imgsWrapp{
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    columns:383px 4;
+    column-gap: 5px;
     padding: 5px;
     width: calc(100% - 10px);
 }
 .img{
     overflow: hidden;
-    width: calc(25% - 10px);
-    min-width: 300px;
-    margin: 5px;
-    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    transition:all 0.2s;
 }
 .img img{
     width: 100%;
@@ -192,16 +191,15 @@ div {
 }
 .collapsed{
     height: 100%;
+    overflow: scroll;
 }
 .on{
     opacity: 100%;
     z-index: 10;
 }
 .hid{
-    min-width: 0;
-    width: 0;
-    height: 0;
-    margin: 0;
+    display: none;
+    padding: 0;
 }
 .backNavToggle{
     width: 0%;
