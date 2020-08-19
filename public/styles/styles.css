@@ -162,6 +162,7 @@ div {
     column-gap: 5px;
     padding: 5px;
     width: calc(100% - 10px);
+    
 }
 .img{
     overflow: hidden;
