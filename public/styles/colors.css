@@ -2,39 +2,39 @@ body{
     background-color: #222222;
 }
 p{
-	color: #FFFFFF;
+	color: #DDDDDD;
 }
 
 #bigtext h3, h1{
-	color: #FFFFFF;
+	color: #DDDDDD;
 }
 #bigtext-sm h1, h3{
-	color: #FFFFFF;
+	color: #DDDDDD;
 }
 .homePage{
     background-color: #222222;
 }
 .navBarLink{
-    color: #FFFFFF;
+    color: #DDDDDD;
 }
 .navBarLink:hover{
-    color: #FFFFFF;
-    background-color: #555555;
+    color: #000000;
+    background-color: #DDDDDD;
 }
 #togglemenu{
-	color: #FFFFFF;
+	color: #DDDDDD;
 }
 #togglemenu:hover{
-	color: #FFFFFF;
-    background-color: #555555;
+	color: #000000;
+    background-color: #DDDDDD;
 }
 .disabled{
-    color: #FFFFFF;
-    background-color: #555555;
+    color: #DDDDDD;
+    background-color: #DDDDDD;
 }
 .disabled:hover{
-    color: #FFFFFF;
-    background-color: #555555;
+    color: #DDDDDD;
+    background-color: #DDDDDD;
 }
 .backNav{
 	background-color: #FF5252;
