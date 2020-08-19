@@ -1,5 +1,4 @@
-var navClusters = document.querySelectorAll('.navCluster');
-var backNavs = document.querySelectorAll('.backNav');
+
 
 function stopDefAction(evt) {
     evt.preventDefault();
@@ -26,6 +25,9 @@ function loadAboutPage(){
 	document.querySelector("#about").classList.add('on');
 }
 function clearNavs(){
+	var navClusters = document.querySelectorAll('.navCluster');
+	var backNavs = document.querySelectorAll('.backNav');
+	
 	for (let i = 0; i < navClusters.length; i++) {
 		let backNav = navClusters[i].firstElementChild;
 		let nav = navClusters[i].lastElementChild;
@@ -34,6 +36,9 @@ function clearNavs(){
 	}
 }
 function updateContent(){
+	var navClusters = document.querySelectorAll('.navCluster');
+	var backNavs = document.querySelectorAll('.backNav');
+	
 	page = window.location.hash.replace(/\#/, '');
 	clearNavs();
 	if(page === "Home" || page === ""){

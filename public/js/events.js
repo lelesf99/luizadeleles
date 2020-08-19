@@ -1,6 +1,3 @@
-var navClusters = document.querySelectorAll('.navCluster');
-var backNavs = document.querySelectorAll('.backNav');
-
 window.onhashchange = function(){
 	updateContent();
 }
@@ -24,21 +21,19 @@ document.querySelector("#bigText").addEventListener("click", ()=>{
 		blackOut.removeAttribute("disabled");
 	}
 });
-for (let i = 0; i < navClusters.length; i++) {
-	let backNav = navClusters[i].firstElementChild;
-	let nav = navClusters[i].lastElementChild;
-	nav.addEventListener('click', (event)=>{
-		console.log(nav.classList.contains('disabled'));
-		if(nav.classList.contains('disabled')){
-			stopDefAction(event);
-		}else{
-			window.location.hash = nav.getAttribute('href');
-			stopDefAction(event);
-			clearNavs();
-		}
-	});
-	backNav.addEventListener('click', (event)=>{
-		window.location.hash = '#Galeria';
+let aboutNav = document.querySelector("#SobreNav");
+aboutNav.addEventListener('click', (event)=>{
+	console.log(aboutNav.classList.contains('disabled'));
+	if(aboutNav.classList.contains('disabled')){
 		stopDefAction(event);
-	});
-}
+	}else{
+		window.location.hash = "Sobre";
+		stopDefAction(event);
+		clearNavs();
+	}
+});
+let backAboutNav = document.querySelector("#backSobre");
+backAboutNav.addEventListener('click', (event)=>{
+	window.location.hash = '#Galeria';
+	stopDefAction(event);
+});
