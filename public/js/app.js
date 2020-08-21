@@ -43,22 +43,16 @@ listRef.listAll().then(function(res) {
 		// You may call listAll() recursively on them.
 		folderRef.listAll().then(function(res) {
 			res.items.forEach(function(itemRef){
-				itemRef.getDownloadURL().then(function(url) {
-					//setting up images
-					imgs.insertAdjacentHTML('beforeend', `<div class="container img ${itemRef.parent.name}"><img src='${url}'></div>`);
-					console.log(url);
-				});
-				console.log(itemRef);
+				//setting up images
+				imgs.insertAdjacentHTML('beforeend', `<div class="container img ${itemRef.parent.name}"><img src='https://storage.googleapis.com/luizadeleles-b81ea.appspot.com/${itemRef.fullPath}'></div>`);
+				console.log(itemRef.fullPath);
 			});
 		});
 	});
 	res.items.forEach(function(itemRef) {
-		console.log(itemRef);
-		itemRef.getDownloadURL().then(function(url) {
-			//setting up images
-			imgs.insertAdjacentHTML('beforeend', `<div class="container img ${itemRef.parent.name}"><img src='${url}'></div>`);
-			console.log(url);
-		});
+		console.log(itemRef.fullPath);
+		//setting up images
+		imgs.insertAdjacentHTML('beforeend', `<div class="container img ${itemRef.parent.name}"><img src='https://storage.googleapis.com/luizadeleles-b81ea.appspot.com/${itemRef.fullPath}'></div>`);
 	});
 	}).catch(function(error) {
 		// Uh-oh, an error occurred!
