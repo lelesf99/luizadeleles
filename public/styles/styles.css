@@ -3,6 +3,9 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+img {
+    pointer-events: none;
+}
 body{
     font-family: 'Quicksand', sans-serif;
     background-color: #EEEEEE;
